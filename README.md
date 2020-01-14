@@ -199,7 +199,7 @@ Als ik het over had kunnen doen had ik misschien eerder aan de bel kunnen trekke
 
 
 
-### leerdoelen
+### Leerdoelen
 #### Situation
 Dit blok draaide vooral om de Basics van Data Science. Ik heb me aangemeld omdat ik het onderwerp erg interesant vond. Ik houd van optimaliseren en overzicht in data.
 
