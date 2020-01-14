@@ -85,6 +85,32 @@ Omdat het schrijven van de paper voornamelijk gezamenlijk ging is het moeilijk o
 
  
 ### Data prepocessing
+#### Dataset
+De dataset die wij hadden bestond uit twee delen. Het eerste deel was de weerdata. 
+
+##### Weerdata
+De NEN heeft een gemiddelde gemaakt van weergegevens die de afgelopen 20 jaar zijn gemeten op het weer station De Bild. De hebben per maand gekeken welke maand de meeste gemiddelde weeromstandigheden had, en hier van de uurlijkse windgegevens beschreven van de zonnenstraling, windsnelheid en temperatuur. Deze gegevens konden we 
+gebruiken om de bepalen hoeveel energie de zonnepanelen en de windmolens konden opwekken. Uiteindelijk toen we de opdracht hebben uitgebreid naar meerdere windstations en jaren hebben die data moeten ophalen. Deze data konden bij de KMNI vinden, maar was niet helemaal zoals gewenst. Deze is opgeschoont en verwerkt zodat we die 
+konden gebruiken in de simualtie. 
+
+##### Configuratie
+De configuratie gaf aan hoe we opstelling van zonnepanelen en windturbines was opgesteld. Hoewel de weerdata bij iedere draai van het genetische algoritme het zelfe bleef, was de configuratie bij iedere berekening anders. De configratie gaaf het volgende aan:
+* Aantal Windturbines
+* Lengte van de windturbines
+* Power curve van de windturbines (hoeveel de windturbines produceerde bij welke snelheid)
+* Voor vier verschillende zonnenpanelen velden (om variatie aan te bieden in de data set)  
+  * De oppervlakte
+  * De de hoek naar de zon
+  * De oriententatie
+
+Verder waren er bevatte deze configratie ook informatie over de Terrein gestelheid (dit bepaalde hoeveel wind de windturbines kan vangen door omliggende gebouwen/natuur) en de efficientie van de zonnenpanelen. 
+De configuratie bepaalde het algoritme zelf, door willekeurige waardes aan te leveren, te kijken welke het beste werkte en die te beteren. 
+
+##### Toepassingen
+Om te berekeningen hoeveel energie de configuratie opleverde aan energie, werd de configuratie ingeladen in de simualtie. De Simulatie was ingesteld op de weerdata die aan heb werd gegeven. Voor het genetisch algoritme hadden we dus een vaste dataset, de weerdata, een variabele, de configuratie. 
+Er was dus niet een boel csv bestandjes met vector cordinaten die we moesten uitlezen, of een set waarmee we het konden vergelijken. Dit vroeg dus om een andere aanpak. 
+
+
 #### GUI
 Als een van de mensen in de groep met de meeste ervaring met programmeren wilde ik graag een grote inpact maken op het onderzoek. Maar omdat Donneley al het genetisch algoritme had geschreven, en Jeremy bezig was met de link tussen Python en Simulink was er niet meer een duidelijk taak voor mij over. 
 Ik heb toen ervoor gekozen om een GUI te maken voor de applicatie.  Hoewel dit niet direct hielp met de voortgang van het onderzoek, was dit later wel heel handig. Onze opdrachtgever, Arie Taal, had veel verzoekjes voor kleine aanpassingen. 
@@ -142,4 +168,71 @@ Deze gegevens worden iedere generaties geupdate zodat je het algoritme in realti
 Dit was erg handig om fouten en bugs te herkennen. We kwamen er bijvoorbeeld achter dat het algoritme soms in een lokaal minimum zit waar geen enkele opstelling in de pool genoeg produceert, maar het er zich zelf uiteindelijk weer uit haald. Ook viel het ons op dat het algoritme niet goed convergeerde. 
 Als je de prijs van de opslag erg goedkoop maakt, verwacht je dat het algoritme niet zou overproduceren, en alles netjes zou opslaan en her gebruiken. Gelukkig hebben we dit kunnen aanpakken. 
 
+#### Dataformatting & Cleansing
+Omdat de data die wij kregen al redelijk goed was, hoefde dit niet prese voor ons project. Toen we de opdracht gingen uitbreiden zodat wij ook konden draaien op andere weerstations in andere jaren, moest die data wel goed geformat worden zodat het algoritme het kon inlezen. Hier heb ik zelf niet aan meegedaan. Ik heb 
+vooral de gegevens zo opgesteld zodat het algoritme er goed mee aan de praat kon, en de outputs van het algoritme goed kon tonen op het scherm. 
 
+
+## Reflectie
+### Eigen Contributie
+#### Situation
+De opdracht die wij kregen was misschien een beetje onderschat. Door het toepassen van een slimme oplossing viel de uiteindelijke werkdruk heel erg mee. Er was alsnog veel te doen, maar dan op ander gebied. Er was minder aandacht voor Datascience, en meer voor perfectioneren en buiten activitetien buiten het curriculum om. 
+
+#### Task
+Als enige Software Engineering student van de groep wilde ik me graag focussen op het schrijven van code en het toepassen van Code Project Doelen. Hierbij bedoel ik Scrum, Git en ontwerpstappen. 
+
+#### Action
+Ik heb me gefocussed op de GUI omdat dat een grote programmeer taak was. 
+Met mijn ervaring met Scrum en Git heb ik de taak van Product Owner en Git Master opgepakt. 
+Met mijn engels skills heb ik me ingezet bij het schrijven van de paper en het geven van de presentaties. 
+
+#### Result
+Hoewel de GUI niet direct heeft geholpen bij de voortgang van het onderzoek, was het later wel handig. Het scheelde ons tijd omdat de opdrachtgever ons niet meer lastig viel met kleine vragen en aanpassen. Zo konden we ons focussen op het schrijven van de paper. 
+Ik heb aan het begin van het blok een planning gemaakt voor het hele semester, de backlog opgesteld en het Trello board aangemaakt. De eerste twee sprints was het erg handig, maar toen de werkdruk afnam hebben we er een stuk minder gebruik van gemaakt. 
+Ik heb een aantal presentaties gegeven omdat ik merkte dat niet iedereen het fijn vond om te doen. Persoonlijk heb ik weinig problemen met presentaties, dus deed ik het graag. Ook bij de paper kon ik goed helpen om moeie engelse zinnen te schrijven en de stukken zo maken dat het goed leesbaar was. 
+
+#### Reflection
+Ik vind het jammer dat ik niet zo veel heb kunnen bijdragen aan het DataScience gedeelte van het project. Hoewel de GUI uiteindelijk erg handig was, had ik liever me tanden gezet in iets ingewikkelders. 
+Ik had gehoopt dat we echt Deeplearing konden toepassen, en een echt moeilijke case voor ons hadden staan, maar dat was niet zo. Ik heb nog gepleit met de project genootjes om dingen erbij te makken, maar we hebben uiteidenlijk besloten om het niet te doen. 
+Als ik het over had kunnen doen had ik misschien eerder aan de bel kunnen trekken en vragen of ik bij een ander groepje mocht die een meer uitdagendere opdracht had. 
+
+
+
+
+### leerdoelen
+#### Situation
+Dit blok draaide vooral om de Basics van Data Science. Ik heb me aangemeld omdat ik het onderwerp erg interesant vond. Ik houd van optimaliseren en overzicht in data.
+
+#### Task
+Ik wilde leren over Neural Networks, Machine Learning en wilde werken aan grote data sets. Het liefst ook met een toepasbare opdracht die met een mooi eind. 
+
+#### Action
+Ik heb in de colleges gevolgd, de DataCamp opdrachten gemaakt en daar buiten om nog extra informatie opgezocht. Ik heb papers gelezen voor ons onderzoek en nieuwe toepassingen geleerd. Voor onze researchopdracht hebben we gebruik gemaakt van een Genetisch Algoritme, iets waar ik al ervaring mee had. 
+
+#### Result
+Uiteindelijk heb ik niet heel veel geleerd. Zelf leer ik het meest door dingen toe doen, maar omdat we iets gebruikt waar ik al ervaring mee had, en het grotendeels zelf niet eens gemaakt heb, viel het een beetje tegen. Colleges waren interessant, en de papers vertelde over coole dingen, maar verder ben ik niet heel veel
+slimmer geworden op het gebied van DataScience. 
+
+#### Reflection
+Ik vind het erg jammer dat ik niet meer met DataScience heb kunnen doen tijdens het blok. Hoewel de colleges interresant waren en de basis goed uitlegde, bleef het bij de basis. Het tentamen was naar mijn idee erg 'surface-level', daar had ik prese al die colleges voor hoeven volgen. En het gekozen algeritme voor onze opdracht
+was een algeritme dat ik al een keer eerder had gemaakt. Tijdens presentaties zag ik wat andere groepen aan het doen waren en dat zag er soms wel erg cool uit, en toen vond ik het jammer dat ik het niet heb kunnen doen. Ik kan me zelf nog wel meer verdiepen in het onderwerp, maar het is moeilijk om een opdracht te vinden die 
+zo goed toepasbaar is als die we kregen van school. 
+
+
+### Groep 
+#### Situation
+De groep bestand uit 5 leden. Een Mechatronica student, een Elektronica studen, twee Networks & System Engineering studenten en ik als software engineering student. Iedereen sprak nederlands, en de sfeer was erg goed. 
+
+#### Task
+Samen moesten we een oplossing bedenken voor onze researchopdracht, en moesten we een paper schrijven. Het was de bedoeling dat iedereen op elk vlak zijn bijdragen kon leveren. 
+
+#### Action
+In het begin zijn de taken verdeeld naar specialiteit. De ICT studenten gingen vooral programmeren en de andere studenten stortte zich in het begin op de research. Later draaide we de taken om, zodat iedereen een beetje van alles had gedaan. 
+
+#### Result
+De taken verdeling was best goed. Hoewel de ICT studenten een stuk meer code hebben geschreven naar de andere, voelde het wel als een groep effort. Omdat Donnely zo snel het algoritme af had, was de werk druk heel laag. Dit zorgde voor veel vrije tijd, wat op zijn beurt zorgde voor een goede groep. We hebben zelf tijd genomen
+om een middag Dungeons & Dragons te spelen, naar de boeren protesten te gaan op het Malieveld en hebben meegdaan aan een Techaton. De sfeer zat er goed in, en iedereen heeft goed zijn steentje bij gedragen.   
+
+#### Reflection
+Ik vond de groep erg fijn. Iedereen had een specialiteit en heeft die goed kunnen toepassen. Hoewel Donnely het algoritme heeft geschreven, voelt het niet alsof hij het hele project heeft gemaakt. Wij hebben de rest goed kunnen aanvullen en het tot een totaal plaatje kunnen maken. 
+Het was fijn dat alle leden nederlands spraken en dat me samen zo'n mooi ding hebben kunnen neerzetten. Wat ook erg goed was, was dat we duidelijk communiceerde met elkaar en dat we bijna elke dag afspraken. Zo bleef iedereen bij het project en hebben we veel gedaan gekregen. 
