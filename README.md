@@ -143,7 +143,7 @@ Het belangrijkste was om alle verschillende parameters mee te kunnen geven aan a
 Dit geeft onze opdrachtgever veel mogelijkheid om de opstelling zo te configuren hoe hij wil, en scheelt het ons tijd om het voor hem te doen. 
 
 Om deze dingen goed mee te geven moesten delen van Donnely's code worden herschrijven. Zie hiervoor de [train()](Sources/train.py) functie, en alle optionele parameters die daaraan worden meegegeven. Die de [Sources/GUI folder](Sources/GUI) voor de code die ik heb geschreven.  
-Het gedeelte waar ik nog wel het meest trots op ben zijn de grafieken die overzicht geven van wat het algoritme heeft berekend. Deze afbeeldingen zijn te vinden in de [Sources/GUI_Afbeeldingen](Sources/GUI_Afbeeldingen) folder. <a href="https://youtu.be/QEC2Tzraq0Y" target="_blank">Bekijk ook de video die laat zien hoe het werkt</a>.
+Het gedeelte waar ik nog wel het meest trots op ben zijn de grafieken die overzicht geven van wat het algoritme heeft berekend. Deze afbeeldingen zijn te vinden dit ablum: <blockquote class="imgur-embed-pub" lang="en" data-id="a/3vXyAnp"><a href="//imgur.com/a/3vXyAnp">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>. <a href="https://youtu.be/QEC2Tzraq0Y" target="_blank">Bekijk ook de video die laat zien hoe het werkt</a>.
 
 De GUI laat de volgende informatie zien:
 * Configuratie  
