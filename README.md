@@ -43,7 +43,7 @@ De resulaten waren best wel interessant. Sommige dingen haden we verwacht:
 * In de zomer wordt er veel meer energie opgewekt dan in de winter. 
 
 Zie deze afbeelding van de GUI die ik heb gemaakt voor een overzicht:
-![Energieproductie](Sources/GUI_Afbeeldingen/EnergieProductie.PNG "Cummulatieve Energie Productie en configuratie")
+![Energieproductie](Sources/GUI_Afbeeldingen/CummulatieveEnergieProductie.PNG "Cummulatieve Energie Productie en configuratie")
 
 Maar wat ons zeker opviel dat er weinig wordt opgeslagen. Dit is omdat de huidige prijs van opslag enorm duur is. Het algoritme berekend dat het goedkoper is om meer zonnenpanelen neer te zetten zodat het zelfs in de wintermaanden genoeg kan produceren om de nacht door te komen. 
 Dit zorgt er op zijn beurt weer voor dat het in zomer veel meer produceert dan nodig. In totaal produceert de hele opstelling 150 keer zo veel energie als nodig is, en dit is erg inefficient.  
@@ -143,7 +143,7 @@ Het belangrijkste was om alle verschillende parameters mee te kunnen geven aan a
 Dit geeft onze opdrachtgever veel mogelijkheid om de opstelling zo te configuren hoe hij wil, en scheelt het ons tijd om het voor hem te doen. 
 
 Om deze dingen goed mee te geven moesten delen van Donnely's code worden herschrijven. Zie hiervoor de [train()](Sources/train.py) functie, en alle optionele parameters die daaraan worden meegegeven. Die de [Sources/GUI folder](Sources/GUI) voor de code die ik heb geschreven.  
-Het gedeelte waar ik nog wel het meest trots op ben zijn de grafieken die overzicht geven van wat het algoritme heeft berekend. Deze afbeeldingen zijn te vinden dit ablum: <blockquote class="imgur-embed-pub" lang="en" data-id="a/3vXyAnp"><a href="//imgur.com/a/3vXyAnp">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>. <a href="https://youtu.be/QEC2Tzraq0Y" target="_blank">Bekijk ook de video die laat zien hoe het werkt</a>.
+Het gedeelte waar ik nog wel het meest trots op ben zijn de grafieken die overzicht geven van wat het algoritme heeft berekend. Deze afbeeldingen zijn te vinden in [dit imgur album](https://imgur.com/a/3vXyAnp). Bekijk ook  <a href="https://youtu.be/QEC2Tzraq0Y" target="_blank">de video</a> die laat zien hoe het werkt.
 
 De GUI laat de volgende informatie zien:
 * Configuratie  
